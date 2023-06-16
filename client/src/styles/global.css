@@ -6,3 +6,6 @@
 body{
     @apply dark:bg-slate-900 dark:text-white
 }
+*{
+    transition: color .1s;
+}

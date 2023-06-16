@@ -5,13 +5,13 @@ function Footer() {
     <>
       <div className="absolute w-screen bottom-0">
         <div className="dark:bg-slate-950 bg-slate-200 dark:text-slate-500 pl-10 flex items-start py-3">
-          <div>
+          <div className="w-1/6">
             <Link to={"/"}>
               <h1 className="font-bold text-4xl text-rose-500">MyShop</h1>
             </Link>
-            <span>Lorem ipsum dolor sit amet.</span>
+            <span>Built on MERN stack</span>
           </div>
-          <div className="flex justify-between w-[70vw] ml-20">
+          <div className="flex justify-between w-5/6 mx-20">
             <div>
               <h1 className="font-bold text-xl">Explore MyShop</h1>
               <div className="text-sm mt-1">
