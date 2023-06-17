@@ -1,10 +1,17 @@
+import { Dispatch, SetStateAction, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
-
-function NotFound() {
+interface progress {
+  setProgress: Dispatch<SetStateAction<number>>;
+}
+function NotFound({ setProgress }: progress) {
+  setProgress(10);
   const navigate = useNavigate();
   const goHome = () => {
     navigate("/");
   };
+  useEffect(() => {
+    setProgress(100);
+  });
   return (
     <>
       <div className="flex flex-col items-center justify-center mt-[25vh]">
