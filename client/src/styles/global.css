@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+    @apply overflow-x-hidden dark:bg-slate-900 dark:text-white bg-indigo-50
+}
+*{
+    transition: color .1s;
+    user-select: none;
+}
