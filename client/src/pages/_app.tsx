@@ -1,5 +1,5 @@
 import "../styles/global.css";
-import { BrowserRouter, Route, Routes, useLocation } from "react-router-dom";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 import LoadingBar from "react-top-loading-bar";
 import { VisibilityProvider } from "../hooks/VisibilityContext";
@@ -13,7 +13,12 @@ function App() {
   const [progress, setProgress] = useState(0);
   return (
     <>
-      <LoadingBar color="#f11946" height={3} progress={progress} />
+      <LoadingBar
+        color="#f11946"
+        waitingTime={200}
+        height={3}
+        progress={progress}
+      />
       <VisibilityProvider>
         <BrowserRouter>
           <Header />
