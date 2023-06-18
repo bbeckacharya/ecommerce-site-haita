@@ -1,9 +1,6 @@
-import { Dispatch, SetStateAction } from "react";
 import { useNavigate } from "react-router-dom";
-interface progress {
-  setProgress?: Dispatch<SetStateAction<number>>;
-}
-function NotFound({ setProgress }: progress) {
+
+function NotFound() {
   // setProgress(10);
   const navigate = useNavigate();
   const goHome = () => {
