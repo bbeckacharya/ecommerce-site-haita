@@ -1,9 +1,4 @@
-import { Dispatch, SetStateAction, useEffect } from "react";
-
-interface progress {
-  setProgress?: Dispatch<SetStateAction<number>>;
-}
-function Home({ setProgress }: progress) {
+function Home() {
   // setProgress(10);
   // useEffect(() => {
   //   setProgress(100);
